@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIRMAAN HYPERLOOP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></head>
+<body>
+    
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hide()><a href="#"><i class="fa-solid fa-x" ></i></a></li>
+    <li><a href="">Home</a></li>
+    <li><a href="">About</a></li>
+    <li><a href="Timeline.html">Timeline</a></li>
+    <li><a href="">Pod design</a></li>
+    <li><a href="">Competition & Events</a></li>
+    <li><a href="">Partners</a></li>
+</ul>
+        <ul>
+    <li class="logolist"><div class="logo" style="background-color: aliceblue;height: 30px;width: 30px;border-radius: 50%;"></div><a href=""><b>Nirmaan <br> Hyperloop</b></a></li>
+    <li class="invisible" ><a href="">Home</a></li>
+    <li class="invisible"><a href="">About</a></li>
+    <li class="invisible"><a href="Timeline.html">Timeline</a></li>
+    <li class="invisible"><a href="">Pod design</a></li>
+    <li class="invisible"><a href="">Competition & Events</a></li>
+    <li class="invisible" ><a href="">Partners</a></li>
+<li onclick=show()><a href="#"><i class="fa-solid fa-bars" id="menubar"></i></a></li>
+</ul>
+    </nav>
+
+ <div class="hero" style="width: 100%;gap: 10px;flex-direction: column;background-color: transparent;padding: 50px;display: flex;align-items: center;justify-content: center;">
+<div class="search" style="display:flex;align-items: center;justify-content: center;background-color: transparent;">
+<input type="search" style="border-radius: 15px;width: 200px;height: 20px;padding: 12px;border: aliceblue;" placeholder="Search here">
+</div>
+<span class="describe" style="display: flex;flex-direction: column;justify-content: center;width: 100%;align-items: center;padding: 70px;color: white;">
+<span><h1 style="text-align: center;"><b>NIRMAAN <h style="color: pink;"> HYPERLOOP</h> </b></h1>
+    <h4 style="text-align: center;">Implementing the future</h4><br>
+  <p style="text-align: center;">  Embracing cutting the edge technology and sustainable innovation to redefine the future of transportation.
+    <br>Embark on a journey of limitless possiblities.</p> <br>
+    
+     
+
+</span>
+<button style="padding: 4px;border: 2px solid purple;">Explore more</button>
+</span>
+
+<div class="pod" style="z-index: -1;width: 100%;background: #000;padding: 4px;display: flex;flex-direction: column;align-items: center;justify-content: center;">
+  <h1 style="text-align: center;color: aliceblue;">Our Pod</h1>
+    <img src="Background.jpeg" alt=""  width="250px" style="z-index: 0;padding: 20px;max-width: 100%;position: relative;right: 0px;">
+</div>
+<div class="grid-contain" >
+<div class="img-container" style="height: 100%;width: 50%;padding-left: 15px;background: #000;display: flex;justify-content: center;align-items: center;">
+
+    <div class="img-box" style="display: grid;grid-template-columns: 100px 100px; grid-gap: 4px;padding: 5px;background-color: antiquewhite;">
+     <div class="imge1" style="height: 100px;width: 100px; "><img src="6a.jpg" alt="" style="border-radius: 5px;" height="100%" width="100%"></div>
+     <div class="imge1" style="height: 100px;width: 100px; "><img src="5a.jpg" alt="" style="border-radius: 5px;"  height="100%" width="100%"></div>
+     <div class="imge1" style="height: 100px;width: 100px; "><img src="2a.jpg" alt="" style="border-radius: 5px;"  height="100%" width="100%"></div>
+     
+    </div>
+    <div class="text" style="padding: 25px;display: block;max-width: 100%;">
+    <h2 style="color: white;">We, at Nirmaan Hyperloop</h2>
+    <p style="color: wheat;">, aim to develop and innovate new modes of transport. Founded in 2018, now a team of 40 creative minds from various engineering domains, Nirmaan Hyperloop aimed to build a Globally recognizable Hyperloop pod.</p>
+</div>
+</div>
+</div>
+<div class="mobile-grid" >
+    <div style="height: 300px;width: 100%;padding: 15px;text-align: center;">
+   <marquee behavior="" direction="" style="animation: scrolling 10s linear;">
+    <img src="2a.jpg" alt="" width="100%" height="200px" >
+    <img src="5a.jpg" alt="" width="100%" height="200px" >
+    <img src="6a.jpg" alt="" width="100%" height="200px">
+
+   </marquee>
+   <div class="text-box" style="display: block;">
+    <h2 style="color: white;font-size: 15px;">We, at Nirmaan Hyperloop</h2>
+    <p style="color: wheat;font-size: 10px;text-align: center;">, aim to develop and innovate new modes of transport. Founded in 2018, now a team of 40 creative minds from various engineering domains, Nirmaan Hyperloop aimed to build a Globally recognizable Hyperloop pod.</p>
+</div>
+   
+</div>
+</div>
+    <script>
+        function show(){
+        const menu=document.querySelector('.sidebar');
+        menu.style.display='flex';
+        }
+        function hide(){
+         const menu=document.querySelector('.sidebar');
+         menu.style.display='none';   
+        }
+       
+    </script>
+</body>
+
+</html>

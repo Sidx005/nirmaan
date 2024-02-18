@@ -1,0 +1,153 @@
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' ,sans-serif;
+}
+body{
+    min-height: 100vh;
+
+background-image:url('download.jpeg') ;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+
+}
+nav{
+   background:  rgba(255,255,255,0.1);
+   backdrop-filter: blur(2px);
+   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1) ;
+}
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+padding: 8px 17px;
+
+}
+nav ul li a{
+   text-decoration: none;
+    color: white;
+    height: 100%;
+    padding: 0 30px;
+    align-items: center;
+    display: flex;
+}
+nav a:hover{
+color: aqua;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+nav ul li{
+    list-style: none;
+}
+.grid-contain{
+    width: 100%; display: flex;justify-content: center;align-items: center;
+
+}
+
+
+.sidebar{
+    top: 0;
+    right: 0;
+    position: fixed;
+    min-height: 100vh;
+    width:100%;
+    z-index: 999;
+    background:  rgba(255,255,255,1);
+   transition: 1s ease-in;
+    backdrop-filter: blur(10px);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1) ;
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 22px 30px;
+    gap:1rem;
+    display: none;
+}
+.sidebar li a{
+    color: black;
+}
+.sidebar a:hover{
+    background-color: black;
+    color: white;
+    
+}
+.sidebar li:hover{
+    width: 100%;
+}
+.logo{
+ background-image: url(nirmaan_hyperloop_logo.jpeg);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+.logolist{
+    display: flex;
+    gap: 7px;
+    padding-left:20px
+}
+
+.describe button{
+   color: purple;
+   border-radius: 5px;
+   cursor: pointer;
+}
+.describe button:hover{
+box-shadow: 0 0 5px purple,
+0 0 25px purple,
+ 0 0 55px purple,
+ 0 0 105px purple,
+ 0 0 205px purple;
+ background-color: purple;
+ color: white;
+}
+
+
+.describe{
+    background-color: transparent;
+}
+.mobile-grid{
+    padding: 35px;
+}
+
+@media(min-width:900px){
+    #menubar{
+        display: none;
+    }
+    .mobile-grid{
+        display: none;
+    }
+}
+@media(max-width:900px){
+   .mobile-grid{
+    display: block;
+    width: 100%;height: 50%;background-color: black;
+   }
+   
+}
+@media(max-width:900px){
+    .invisible{
+        display: none;
+    }
+
+.img-box img{
+    display: none;
+}
+.text 
+h2 p{
+    display: none;
+}
+
+}
+
+@media(max-width: 900px) {
+   .grid-contain{
+    display: none;
+   }
+}
